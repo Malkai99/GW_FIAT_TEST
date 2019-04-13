@@ -1,0 +1,147 @@
+.container-fluid.mt-1
+	h5.header COTIZADOR
+	.frase
+		.linea &nbsp;
+		.leyenda CITADINO,&nbsp;AVENTURERO,&nbsp;DEPORTIVO
+		.linea &nbsp;
+	h1 Elige el tuyo
+	.imagen-carro
+		img(src="img/carro.png"  alt="Responsive image")
+	|
+	|
+	.card
+		.card-body
+			.caja.formulario.col-lg-12.col-md-12.col-sm-12
+				.form
+					.row.row__arriba
+						.col-xl-6.col-sm-12.col-xs-12
+							label.select MODELO
+							select.form-control
+								option.select Selecciona
+								option.select Mobi
+								option.select Uno
+								option.select Palio
+								option.select Ducato
+
+						.col-xl-6.col-sm-12.col-xs-12
+							label.select VERSION
+							select.form-control
+								option.select Selecciona
+								option.select Mobi Like
+								option.select Uno Way
+								option.select Palio Adventure
+								option.select Ducato Cargo Van
+					.row.row__abajo
+						.col-xl-6.col-sm-12.col-xs-12
+							label.select ESTADO
+							select.form-control
+								option.select Selecciona
+								option.select Coahuila
+								option.select Ciudad de Mexico
+								option.select Jalisco
+								option.select Nuevo Leon
+						.col-xl-6.col-sm-12.col-xs-12
+							label.select DISTRIBUIDOR
+							select.form-control
+								option.select Selecciona
+								option.select Coahuila Motors
+								option.select San Rafael
+								option.select Roca Automotriz
+								option.select Car One Monterrey
+					.row
+						.frase
+							.linea.otra &nbsp;
+							.leyenda.datos Datos personales
+							.linea.otra &nbsp;
+						|
+						|
+						p.texto ESCRIBE TUS DATOS PERSONALES
+					.form-row
+						.col-md-4.mb-3
+							label NOMBRE(s)
+							input.form-control(placeholder="ESCRIBE TU NOMBRE")
+						.col-md-4.mb-3
+							label APELLIDO PATERNO
+							input.form-control(placeholder="ESCRIBE TU APELLIDO")
+						.col-md-4.mb-3
+							label APELLIDO MATERNO
+							input.form-control(placeholder="ESCRIBE TU APELLIDO")
+					.form-row
+						.col-md-4.mb-2
+							label EMAIL
+							input.form-control(placeholder="CORREO@EMAIL.COM.MX")
+						.col-md-4.mb-2
+							label TELEFONO
+							input.form-control(placeholder="01.844.439.0654")
+					.form-row
+						p.texto__toggle DESEO SER CONTACTADO POR
+						.caja
+						.btn-group.btn-group-toggle(data-toggle="buttons")
+							label.btn.btn-secondary.active 
+								i.fas.fa-phone.fa-flip-horizontal
+								span TELÉFONO
+								input(type="radio" name="options" id="option1" autocomplete="off" checked)
+							label.btn.btn-secondary.active#option2 EMAIL
+								input(type="radio" name="options" id="option2" autocomplete="off")
+							label.btn.btn-secondary.active#option2 AMBOS
+								input(type="radio" name="options" id="option3" autocomplete="off")
+					.row
+						.frase
+							.linea.otra__corta &nbsp;
+							.leyenda.datos Forma de pago
+							.linea.otra__corta &nbsp;
+						|
+						|
+						p.texto PERSONALIZA TU COTIZACIÓN
+						.caja
+							.btn-group.btn-group-toggle.pago(data-toggle="buttons")
+								label.btn.btn-secondary.active(style="margin-right: 0rem;") CONTADO
+									input(type="radio" name="options" id="option1" autocomplete="off")
+								label.btn.btn-secondary.active#option2(style="margin-right: 1.2rem;") CREDITO
+									input(type="radio" name="options" id="option2" autocomplete="off" checked)
+							.form-row.caja
+								.form-group.col-md-6
+									label.select ELIGE TU TIPO DE PAGO
+									input.form-control.control__corto(placeholder="80,000.00")
+								.form-group.col-md-6.control__form
+									label.select__corto PLAZO
+									select.form-control.control__corto
+										option.select Selecciona
+										option.select 12 MESES
+										option.select 36 MESES
+										option.select 48 MESES
+										option.select 72 MESES
+					.row
+						.frase
+							.linea.otra__corta &nbsp;
+							.leyenda.datos Comentarios
+							.linea.otra__corta &nbsp;
+						|
+						|
+						p.texto NOS IMPORTA TUS COMENTARIOS
+						.caja
+							.mb-3
+								label.select ¿DUDAS? ¿COMENTARIOS?
+								textarea.form-control(placeholder="ESCRIBENOS")
+							.form-check
+								.col
+									input.form-check-input(type="checkbox" value="" id="defaultCheck1")
+									label.form-check-label(for="defaultCheck2") He leído y acepto el aviso de privacidad
+								.col
+									input.form-check-input(type="checkbox" value="" id="defaultCheck1")
+									label.form-check-label(for="defaultCheck2") No deseo recibir promociones
+									button.btn.btn-danger(type="submit") ENVIAR
+	.prueba
+
+
+
+
+
+
+
+
+
+
+
+
+

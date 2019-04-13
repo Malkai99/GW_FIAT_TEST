@@ -1,0 +1,31 @@
+{
+  "name": "frontend-gw",
+  "version": "1.0.0",
+  "main": "index.js",
+  "dependencies": {
+    "gulp-cli": "^2.1.0",
+    "nib": "^1.1.2",
+    "pug-cli": "^1.0.0-alpha6",
+    "rupture": "^0.7.1",
+    "stylus": "^0.54.5"
+  },
+  "devDependencies": {
+    "bootstrap": "^4.3.1",
+    "browser-sync": "^2.26.3",
+    "gulp": "^3.9.1",
+    "gulp-changed": "^3.2.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-imagemin": "^5.0.3",
+    "gulp-pug": "^4.0.1",
+    "gulp-stylus": "^2.7.0",
+    "jquery": "^3.4.0",
+    "nodemon": "^1.18.11"
+  },
+  "scripts": {
+    "dev": "nodemon gulp default",
+    "gulp": "gulp default"
+  },
+  "author": "@SantiagoOrtega",
+  "license": "ISC",
+  "description": ""
+}

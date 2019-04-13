@@ -1,0 +1,105 @@
+//Colores
+azul = #4957d1
+rojo = #ff0000
+gris = #666666
+
+//Breakpoint
+bp1 = 20em //320
+bp2 = 46em //768px
+bp3 = 64em //1024px
+bp4 = 90em //1200px
+
+// scale= 0 320px 768px 1024px 1440px
+
+//Texto
+fuentePrimiaria = 'Lato', sans-serif
+fuenteSecundaria = 'Playfair Display', serif
+
+img.logo
+	max-width 100%
+	width 100%
+	height auto
+	+to-width(bp2)
+		width 240px
+    	height 240px
+	
+.carro
+	margin -2.3rem 0 0 29.3%
+	center-block()
+	max-height 100%
+	width auto
+
+	
+.listas
+	list-style-type none
+	margin 0
+	padding 0
+
+.select
+	below(bp2)
+		margin 0
+		padding 0
+		
+//Inputs
+input.form-control
+	border-radius 0px!important
+	width 80%
+
+.btn-group
+	width 100%
+
+button.btn.btn-danger
+	background-color white
+	color black!important
+	border-radius 0px!important
+	height 40px
+	width 130px
+	font-family fuentePrimiaria
+	font-weight 700
+	letter-spacing 1px
+	margin-left 86%
+	+below(bp2)
+		margin-left 67%
+
+input.form-check-input
+	width 25px
+	height 25px
+
+label
+	margin-bottom 3%!important
+	margin-top 3%!important
+
+.form-control
+	height 2rem
+	
+//tamaño del input elige tu tipo de pago
+input.form-control.control__corto
+	width 80%
+
+.form-control.control__corto
+	margin-left 0rem
+
+//tamaño del input plazo
+select.form-control.control__corto
+	width 79%
+	margin-left -1.5rem
+	margin-right 1rem
+
+label.select__corto
+	margin-left -1.4rem
+	color gris
+	
+.form-check-label
+	padding-left -23px
+
+input[type="checkbox"] 
+	width 1.45em
+	height 1.45em
+	position relative
+	appearance none
+	border-radius 5em
+
+select.form-control.control__corto
+	border-radius 0px!important
+
+	
